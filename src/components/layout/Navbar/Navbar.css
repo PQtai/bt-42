@@ -1,0 +1,97 @@
+:root {
+  --padding-left-right-item-li: 20px;
+}
+.navbar-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 20px;
+  padding: 0 40px;
+  z-index: 10;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.navbar__contact {
+  position: absolute;
+  padding: 0 40px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  top: calc(100% + 16px);
+  color: #ffffff;
+  width: 100%;
+  left: 0;
+}
+.navbar__contact--left,
+.navbar__contact--right {
+  display: flex;
+  align-items: center;
+}
+.navbar__contact svg {
+  font-size: 18px;
+  margin: 0 4px;
+}
+
+.navbar {
+  padding: 15px;
+  background-color: #ffffff;
+  height: 100%;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo__img {
+  width: 155px;
+  height: 40px;
+}
+
+.navbar__list {
+  display: flex;
+}
+.list__page {
+  display: flex;
+}
+
+.page__item {
+  padding: 10px var(--padding-left-right-item-li);
+  position: relative;
+}
+.page__item:hover {
+  cursor: pointer;
+}
+.page__item.item__langua > span {
+  display: flex;
+  align-items: center;
+}
+.item__langua > span > svg {
+  font-size: 16px;
+  margin: 0 10px;
+}
+.page__item.active::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  bottom: 10%;
+  left: var(--padding-left-right-item-li);
+  right: var(--padding-left-right-item-li);
+  background-color: #f8d000;
+}
+
+.btn__contact {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  background-color: #f8d000;
+  border-radius: 3px;
+}
+.btn__contact > svg {
+  margin-right: 10px;
+  font-size: 16px;
+}

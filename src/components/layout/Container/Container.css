@@ -1,0 +1,17 @@
+.list__title {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+}
+.list__title > li {
+  margin: 0 10px;
+  padding: 16px 18px;
+  border-radius: 6px;
+}
+.list__title > li:hover {
+  cursor: pointer;
+}
+.list__title > li.active {
+  background-color: #f8d000;
+}
